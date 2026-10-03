@@ -22,7 +22,7 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: dist publikálása a deploy ágra
+      - name: Publish dist to the deploy branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
