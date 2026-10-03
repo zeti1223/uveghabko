@@ -1,0 +1,16 @@
+{
+  "name": "uveghabko.hu – Üveghabkő a lemezalap alá",
+  "short_name": "Üveghabkő",
+  "description": "Örökre tartó hőszigetelés és teherhordó réteg a családi ház lemezalapja alá.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F3F8F7",
+  "theme_color": "#124A50",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

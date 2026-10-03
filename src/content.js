@@ -1,0 +1,5 @@
+export { site } from './content/site.js'
+export { comparison } from './content/comparison.js'
+export { benefits } from './content/benefits.js'
+export { consequences } from './content/consequences.js'
+export { faq } from './content/faq.js'

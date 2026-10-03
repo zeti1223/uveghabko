@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#124A50"/>
+      <stop offset="100%" stop-color="#082528"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A9CFC9"/>
+      <stop offset="100%" stop-color="#488B8F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern overlay -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Badge / Logo icon -->
+  <g transform="translate(100, 100)">
+    <rect width="64" height="64" rx="14" fill="#A9CFC9"/>
+    <rect x="10" y="16" width="44" height="10" rx="3" fill="#124A50"/>
+    <rect x="10" y="28" width="44" height="24" rx="3" fill="#082528"/>
+  </g>
+
+  <text x="180" y="142" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="34" fill="#A9CFC9" letter-spacing="1">uveghabko.hu</text>
+
+  <!-- Main Headline -->
+  <text x="100" y="270" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="52" fill="#FFFFFF" line-height="1.15">
+    <tspan x="100" dy="0">Amit a lemezalap alá tesz,</tspan>
+    <tspan x="100" dy="68" fill="#A9CFC9">az ott is marad – örökre.</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="100" y="440" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="26" fill="#D2E5E2">
+    <tspan x="100" dy="0">Üveghabkő (üveghab zúzalék) hőszigetelés és teherhordó réteg lemezalap alá.</tspan>
+    <tspan x="100" dy="38">Nem öregszik • Nem szívja a vizet • Rágcsálóbiztos</tspan>
+  </text>
+
+  <!-- Footer highlight bar -->
+  <rect x="100" y="525" width="480" height="4" rx="2" fill="url(#accentGrad)"/>
+</svg>
