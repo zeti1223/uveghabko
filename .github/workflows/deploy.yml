@@ -1,12 +1,15 @@
-name: Deploy
+name: Build
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,13 +22,10 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Feltöltés FTP-n
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: dist publikálása a deploy ágra
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
-          local-dir: ./dist/
-          server-dir: ./
-          log-level: verbose
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy
+          publish_dir: ./dist
+          force_orphan: true
