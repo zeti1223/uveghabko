@@ -28,3 +28,4 @@ jobs:
           protocol: ftp
           local-dir: ./dist/
           server-dir: ./
+          log-level: verbose
